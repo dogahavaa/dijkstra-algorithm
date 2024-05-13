@@ -21,6 +21,7 @@ namespace DijkstraAlgoritmasiv2
             dijkstra.DugumEkle("D", new List<string> { "E", "F" }, new List<int> { 20, 12 });
             dijkstra.DugumEkle("E", new List<string> { "G" }, new List<int> { 15 });
             dijkstra.DugumEkle("F", new List<string> { "G" }, new List<int> { 60 });
+            dijkstra.DugumEkle("G", new List<string> { "" }, new List<int> { });
 
             #endregion
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -95,12 +96,7 @@ namespace DijkstraAlgoritmasiv2
 
         }
 
-        public void DugumEkle(string dugum, List<string> edugum, List<int> mesafe)
-        {
-            // Gelen parametreleri Dugum nesnesine çevirip dugumler listesine attık
-            Dugum veri = new Dugum(dugum, edugum, mesafe);
-            dugumler.Add(veri);
-        }
+
 
         private Dugum BaslangicDugumuBul(string baslangicDugumu)
         {
@@ -123,41 +119,17 @@ namespace DijkstraAlgoritmasiv2
             // Geçerli düğümler kümesinden erişilebilir düğümler kümesindeki elemanlar arasındaki uzaklıklar ve yazdırma kısmı
             for (int i = 0; i < gecerliDugumlerListesi.Count; i++)
             {
-               // if (gecerliDugumlerListesi[i].ziyaretEdilmis == false)
-               // {
-
-                Dugum suankiDugum = gecerliDugumlerListesi[i];
-                
+                Dugum suankiDugum = gecerliDugumlerListesi[i];            
                 // Seçili Düğümün erişebildikleri
                 for (int j = 0; j < suankiDugum.erisilebilirDugumleri.Count; j++) // j = Erişilen düğümün index numarası
-                    {
-                    string erisilenDugum = suankiDugum.erisilebilirDugumleri[j]; // Örneğin A düğümünün eriştiği B veya C
-
-                    if (!ErisilebilirdeYoksa(erisilenDugum))
-                    {
+                {
+                string erisilenDugum = suankiDugum.erisilebilirDugumleri[j]; // Örneğin A düğümünün eriştiği B veya C
+                     if (ErisilebilirdeYoksa(erisilenDugum))
+                     {
                         Console.WriteLine(suankiDugum.gecerliDugum + " -> " + erisilenDugum + " = " + suankiDugum.mesafeleri[j]);
                         mesafeler.Add(suankiDugum.mesafeleri[j]);
-                    }
-
-
-                    //bool baglantiVarmi = false;
-                        // GENEL Erişilebilen düğümler
-                        //for (int k = 0; k < erisilebilirDugumlerListesi.Count; k++)
-                        //{
-                        //    // Erişilen düğüm, erisilebilir düğümler kümesinde ise;
-                        //    if (suankiDugum.erisilebilirDugumleri.Contains(erisilenDugum) )
-                        //    {
-                        //        baglantiVarmi = true;
-                        //    }
-                        //}
-                        //if (baglantiVarmi)
-                        //{
-                        //    // İki düğüm arasında bağlantı varsa bunları mesafesiyle birlikte yazdır.
-                        //    Console.WriteLine(suankiDugum.gecerliDugum + " -> " + erisilenDugum + " = " + suankiDugum.mesafeleri[j]);
-                        //    mesafeler.Add(suankiDugum.mesafeleri[j]);
-                        //}
-                    }
-                //}
+                     }
+                }
             }
 
 
@@ -166,6 +138,7 @@ namespace DijkstraAlgoritmasiv2
             int[] indexler = EnKisaMesafeyeSahipDugum(minMesafe);
             SaklananAyritOlustur(indexler); // En kısa mesafe saklanan ayrıta eklendi, Erişilen düğüm geçerli düğümler kümesine eklendi 
             //mesafeler.Clear();
+
         }
 
         private bool ErisilebilirdeYoksa(string erisilenDugum)
@@ -175,6 +148,18 @@ namespace DijkstraAlgoritmasiv2
                 if (erisilenDugum == erisilebilirDugumlerListesi[i].gecerliDugum)
                     return true;
                 
+            }
+            return false;
+        }
+
+        private bool GecerlideYoksa(string gecerliDugum)
+        {
+            for (int i = 0; i < gecerliDugumlerListesi.Count; i++)
+            {
+                if (gecerliDugum == gecerliDugumlerListesi[i].gecerliDugum)
+                {
+                    return true;
+                }
             }
             return false;
         }
@@ -206,66 +191,47 @@ namespace DijkstraAlgoritmasiv2
             SaklananAyrit s = new SaklananAyrit(saklananAyritNereden, saklananAyritNereye, mesafe);
             saklananAyritlar.Add(s);
 
-            // Eriştiği düğümümün indexini bul ( Erişilebilir düğümler listesindeki index )
-            int index = -1;
-            for (int i = 0; i < erisilebilirDugumlerListesi.Count; i++)
-            {
-                if (saklananAyritNereye == erisilebilirDugumlerListesi[i].gecerliDugum)
-                {
-                    index = i;
-                }
-            }
-
-
             // Erişilen düğümü geçerli düğümler kümesine at
             // Erişilebilir düğümler kümesinden çıkart.
             for (int i = 0; i < dugumler.Count; i++)
             {
                 if (saklananAyritNereye == dugumler[i].gecerliDugum)
                 {
-                    gecerliDugumlerListesi.Add(dugumler[i]);
+
+                    if (!(GecerlideYoksa(dugumler[i].gecerliDugum)))
+                    {
+                        gecerliDugumlerListesi.Add(dugumler[i]);
+                    }
+
                     ErisilebilirDugumEkle(dugumler[i]);
-
-                    //DENEME BAŞLANGIÇ
-
-                    erisilebilirDugumlerListesi.RemoveAll(x=> x.gecerliDugum == saklananAyritNereye);
-
-                    //DENEME BİTİŞ
-                    
-
-                    //erisilebilirDugumlerListesi.RemoveAt(index);
                 }
+                erisilebilirDugumlerListesi.RemoveAll(x => x.gecerliDugum == saklananAyritNereye);
             }
-
-            
-
-
             
         }
+
+
         private void ErisilebilirDugumEkle(Dugum dugum)
         {
-            bool baglantiVarMi = false;
-            for (int i = 0; i < dugum.erisilebilirDugumleri.Count; i++)
+            // Erişilebilir düğüm ekle
+            for (int i = 0; i < dugumler.Count; i++)
             {
-                // String düğüm => dugum.erisilebilirDugumleri[i]
-                for (int j = 0; j < erisilebilirDugumlerListesi.Count; j++)
+                for (int j = 0; j < dugum.erisilebilirDugumleri.Count; j++)
                 {
-                    if (!(erisilebilirDugumlerListesi[j].erisilebilirDugumleri.Contains(dugum.erisilebilirDugumleri[i])))
+                    if (dugum.erisilebilirDugumleri[j] == dugumler[i].gecerliDugum && !ErisilebilirdeYoksa(dugum.erisilebilirDugumleri[j]))
                     {
-                        baglantiVarMi = true;
+                        erisilebilirDugumlerListesi.Add(dugumler[i]);                 
                     }
                 }
             }
-            if (baglantiVarMi)
-            {
-                Console.WriteLine("bura çalısıyor ");
-                erisilebilirDugumlerListesi.Add(dugum);
-            }
         }
 
-
-
-
+        public void DugumEkle(string dugum, List<string> edugum, List<int> mesafe)
+        {
+            // Gelen parametreleri Dugum nesnesine çevirip dugumler listesine attık
+            Dugum veri = new Dugum(dugum, edugum, mesafe);
+            dugumler.Add(veri);
+        }
     }
 }
 

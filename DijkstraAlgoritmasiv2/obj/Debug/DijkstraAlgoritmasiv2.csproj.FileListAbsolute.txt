@@ -28,3 +28,10 @@ C:\Users\dogah\OneDrive\Masaüstü\DijkstraAlgoritmasiv2\DijkstraAlgoritmasiv2\o
 C:\Users\dogah\OneDrive\Masaüstü\DijkstraAlgoritmasiv2\DijkstraAlgoritmasiv2\obj\Debug\DijkstraAlgoritmasiv2.csproj.CoreCompileInputs.cache
 C:\Users\dogah\OneDrive\Masaüstü\DijkstraAlgoritmasiv2\DijkstraAlgoritmasiv2\obj\Debug\DijkstraAlgoritmasiv2.exe
 C:\Users\dogah\OneDrive\Masaüstü\DijkstraAlgoritmasiv2\DijkstraAlgoritmasiv2\obj\Debug\DijkstraAlgoritmasiv2.pdb
+C:\Users\dogah\OneDrive\Belgeler\GitHub\dijkstra-algorithm\DijkstraAlgoritmasiv2\bin\Debug\DijkstraAlgoritmasiv2.exe.config
+C:\Users\dogah\OneDrive\Belgeler\GitHub\dijkstra-algorithm\DijkstraAlgoritmasiv2\bin\Debug\DijkstraAlgoritmasiv2.exe
+C:\Users\dogah\OneDrive\Belgeler\GitHub\dijkstra-algorithm\DijkstraAlgoritmasiv2\bin\Debug\DijkstraAlgoritmasiv2.pdb
+C:\Users\dogah\OneDrive\Belgeler\GitHub\dijkstra-algorithm\DijkstraAlgoritmasiv2\obj\Debug\DijkstraAlgoritmasiv2.csproj.AssemblyReference.cache
+C:\Users\dogah\OneDrive\Belgeler\GitHub\dijkstra-algorithm\DijkstraAlgoritmasiv2\obj\Debug\DijkstraAlgoritmasiv2.csproj.CoreCompileInputs.cache
+C:\Users\dogah\OneDrive\Belgeler\GitHub\dijkstra-algorithm\DijkstraAlgoritmasiv2\obj\Debug\DijkstraAlgoritmasiv2.exe
+C:\Users\dogah\OneDrive\Belgeler\GitHub\dijkstra-algorithm\DijkstraAlgoritmasiv2\obj\Debug\DijkstraAlgoritmasiv2.pdb
