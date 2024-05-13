@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dogah\\OneDrive\\Masa\u00FCst\u00FC\\DijkstraAlgoritmasiv2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F61C390-A95E-42AC-BFE1-4CF36C698400}|DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2.csproj|C:\\Users\\dogah\\OneDrive\\Masa\u00FCst\u00FC\\DijkstraAlgoritmasiv2\\dijkstraalgoritmasiv2\\saklananayrit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F61C390-A95E-42AC-BFE1-4CF36C698400}|DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2.csproj|solutionrelative:dijkstraalgoritmasiv2\\saklananayrit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F61C390-A95E-42AC-BFE1-4CF36C698400}|DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2.csproj|c:\\users\\dogah\\onedrive\\masa\u00FCst\u00FC\\dijkstraalgoritmasiv2\\dijkstraalgoritmasiv2\\dijkstra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F61C390-A95E-42AC-BFE1-4CF36C698400}|DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2.csproj|solutionrelative:dijkstraalgoritmasiv2\\dijkstra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F61C390-A95E-42AC-BFE1-4CF36C698400}|DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2.csproj|C:\\Users\\dogah\\OneDrive\\Masa\u00FCst\u00FC\\DijkstraAlgoritmasiv2\\dijkstraalgoritmasiv2\\dugum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F61C390-A95E-42AC-BFE1-4CF36C698400}|DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2.csproj|solutionrelative:dijkstraalgoritmasiv2\\dugum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F61C390-A95E-42AC-BFE1-4CF36C698400}|DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2.csproj|C:\\Users\\dogah\\OneDrive\\Masa\u00FCst\u00FC\\DijkstraAlgoritmasiv2\\dijkstraalgoritmasiv2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F61C390-A95E-42AC-BFE1-4CF36C698400}|DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2.csproj|solutionrelative:dijkstraalgoritmasiv2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SaklananAyrit.cs",
+              "DocumentMoniker": "C:\\Users\\dogah\\OneDrive\\Masa\u00FCst\u00FC\\DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2\\SaklananAyrit.cs",
+              "RelativeDocumentMoniker": "DijkstraAlgoritmasiv2\\SaklananAyrit.cs",
+              "ToolTip": "C:\\Users\\dogah\\OneDrive\\Masa\u00FCst\u00FC\\DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2\\SaklananAyrit.cs",
+              "RelativeToolTip": "DijkstraAlgoritmasiv2\\SaklananAyrit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:57:30.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dijkstra.cs",
+              "DocumentMoniker": "C:\\Users\\dogah\\OneDrive\\Masa\u00FCst\u00FC\\DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2\\Dijkstra.cs",
+              "RelativeDocumentMoniker": "DijkstraAlgoritmasiv2\\Dijkstra.cs",
+              "ToolTip": "C:\\Users\\dogah\\OneDrive\\Masa\u00FCst\u00FC\\DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2\\Dijkstra.cs",
+              "RelativeToolTip": "DijkstraAlgoritmasiv2\\Dijkstra.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAawIAAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T13:44:11.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dugum.cs",
+              "DocumentMoniker": "C:\\Users\\dogah\\OneDrive\\Masa\u00FCst\u00FC\\DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2\\Dugum.cs",
+              "RelativeDocumentMoniker": "DijkstraAlgoritmasiv2\\Dugum.cs",
+              "ToolTip": "C:\\Users\\dogah\\OneDrive\\Masa\u00FCst\u00FC\\DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2\\Dugum.cs",
+              "RelativeToolTip": "DijkstraAlgoritmasiv2\\Dugum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T13:44:11.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dogah\\OneDrive\\Masa\u00FCst\u00FC\\DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2\\Program.cs",
+              "RelativeDocumentMoniker": "DijkstraAlgoritmasiv2\\Program.cs",
+              "ToolTip": "C:\\Users\\dogah\\OneDrive\\Masa\u00FCst\u00FC\\DijkstraAlgoritmasiv2\\DijkstraAlgoritmasiv2\\Program.cs",
+              "RelativeToolTip": "DijkstraAlgoritmasiv2\\Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwCEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:57:26.968Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
